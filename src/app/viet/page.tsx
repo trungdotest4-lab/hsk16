@@ -12,6 +12,7 @@ export default function LuyenViet() {
   const [charIdx, setCharIdx] = useState(0);
   const [filter, setFilter] = useState("");
   const [status, setStatus] = useState<"idle" | "quiz" | "done">("idle");
+  const [ttsWarning, setTtsWarning] = useState(false);
   const boxRef = useRef<HTMLDivElement>(null);
   const writerRef = useRef<HanziWriterType | null>(null);
 
@@ -127,12 +128,19 @@ export default function LuyenViet() {
                 ✍️ Luyện viết
               </button>
               <button
-                onClick={() => speak(word.h)}
+                onClick={() => speak(word.h, () => setTtsWarning(true))}
                 className="px-4 py-2 rounded-full border border-stone-300 dark:border-stone-700 text-sm hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
               >
                 🔊 Nghe phát âm
               </button>
             </div>
+            {ttsWarning && (
+              <p className="text-xs text-amber-600">
+                ⚠️ Máy chưa phát được âm thanh. Nếu đang mở trong Zalo/Messenger, hãy chọn &quot;Mở
+                bằng Safari/Chrome&quot;. Vẫn không nghe được thì vào Cài đặt máy để tải giọng
+                tiếng Trung.
+              </p>
+            )}
             {status === "quiz" && (
               <p className="text-sm text-amber-600">Hãy viết từng nét theo đúng thứ tự...</p>
             )}

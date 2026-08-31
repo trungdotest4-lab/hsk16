@@ -33,6 +33,7 @@ export default function Flashcards() {
   const [done, setDone] = useState({ known: 0, unknown: 0 });
   const [ready, setReady] = useState(false);
   const [answering, setAnswering] = useState(false); // chặn bấm đúp trong lúc chờ úp thẻ
+  const [ttsWarning, setTtsWarning] = useState(false);
 
   useEffect(() => {
     initTTS(); // nạp giọng đọc sớm + mở khóa phát âm trên mobile
@@ -143,13 +144,21 @@ export default function Flashcards() {
             <button
               onClick={(e) => {
                 e.stopPropagation();
-                speak(current.h);
+                speak(current.h, () => setTtsWarning(true));
               }}
               className="px-5 py-2 rounded-full border border-stone-300 dark:border-stone-700 text-sm hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
             >
               🔊 Nghe phát âm
             </button>
           </div>
+
+          {ttsWarning && (
+            <p className="text-center text-xs text-amber-600 -mt-3">
+              ⚠️ Máy chưa phát được âm thanh. Nếu bạn đang mở link trong Zalo/Messenger/Facebook,
+              hãy chạm góc phải trên và chọn &quot;Mở bằng Safari/Chrome&quot;. Nếu vẫn không nghe
+              được, vào Cài đặt máy → Ngôn ngữ &amp; giọng đọc để tải giọng tiếng Trung.
+            </p>
+          )}
 
           <div className="grid grid-cols-2 gap-3">
             <button

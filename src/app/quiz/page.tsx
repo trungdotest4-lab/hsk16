@@ -42,6 +42,7 @@ export default function Quiz() {
   const [idx, setIdx] = useState(0);
   const [score, setScore] = useState(0);
   const [picked, setPicked] = useState<string | null>(null);
+  const [ttsWarning, setTtsWarning] = useState(false);
 
   function start(m: Mode) {
     setMode(m);
@@ -60,7 +61,7 @@ export default function Quiz() {
 
   // Tự phát âm khi sang câu mới ở chế độ nghe (kể cả khi "Làm lại" với bộ câu hỏi mới)
   useEffect(() => {
-    if (mode === "nghe" && q && picked === null) speak(q.word.h);
+    if (mode === "nghe" && q && picked === null) speak(q.word.h, () => setTtsWarning(true));
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [mode, idx, questions]);
 
@@ -144,7 +145,7 @@ export default function Quiz() {
         {mode === "chu" && <span className="text-xl font-medium">{meaning(q.word)}</span>}
         {mode === "nghe" && (
           <button
-            onClick={() => speak(q.word.h)}
+            onClick={() => speak(q.word.h, () => setTtsWarning(true))}
             className="text-5xl hover:scale-110 transition-transform"
             aria-label="Phát âm lại"
           >
@@ -152,6 +153,14 @@ export default function Quiz() {
           </button>
         )}
       </div>
+
+      {mode === "nghe" && ttsWarning && (
+        <p className="text-center text-xs text-amber-600 -mt-3">
+          ⚠️ Máy chưa phát được âm thanh. Nếu đang mở link trong Zalo/Messenger/Facebook, hãy
+          chọn &quot;Mở bằng Safari/Chrome&quot;. Vẫn không nghe được thì vào Cài đặt máy → Ngôn
+          ngữ &amp; giọng đọc để tải giọng tiếng Trung.
+        </p>
+      )}
 
       <div className="grid grid-cols-1 gap-3">
         {q.choices.map((c) => {
