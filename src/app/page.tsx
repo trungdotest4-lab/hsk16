@@ -31,6 +31,12 @@ const FEATURES = [
     desc: "Quiz chọn nghĩa, chọn chữ và luyện nghe theo từng cấp độ HSK.",
   },
   {
+    href: "/giaotrinh",
+    hanzi: "课",
+    title: "Học theo giáo trình",
+    desc: "Từ vựng thật trích từng bài trong sách Giáo trình Hán ngữ — học đúng thứ tự sách.",
+  },
+  {
     href: "/onsai",
     hanzi: "错",
     title: "Sổ từ sai",

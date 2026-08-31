@@ -36,6 +36,10 @@ yarn-error.log*
 # vercel
 .vercel
 
+# nguồn giáo trình tải từ Google Drive (PDF bản quyền + audio/video dung lượng lớn)
+# — chỉ dùng cục bộ để trích dữ liệu bài học, không đưa lên git/GitHub
+/[1-6]. LỘ TRÌNH HỌC HSK*/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

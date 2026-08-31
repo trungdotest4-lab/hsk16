@@ -1,0 +1,2384 @@
+[
+  {
+    "n": 1,
+    "words": [
+      {
+        "h": "比",
+        "p": "bǐ",
+        "vi": "hơn, so với",
+        "pos": "介"
+      },
+      {
+        "h": "变",
+        "p": "biàn",
+        "vi": "thay đổi",
+        "pos": "动"
+      },
+      {
+        "h": "变化",
+        "p": "biànhuà",
+        "vi": "thay đổi",
+        "pos": "名、动"
+      },
+      {
+        "h": "城市",
+        "p": "chéngshì",
+        "vi": "thành phố",
+        "pos": "名"
+      },
+      {
+        "h": "冬天",
+        "p": "dōngtiān",
+        "vi": "mùa đông",
+        "pos": "名"
+      },
+      {
+        "h": "度",
+        "p": "dù",
+        "vi": "độ",
+        "pos": "量"
+      },
+      {
+        "h": "饭店",
+        "p": "fàndiàn",
+        "vi": "khách sạn, tiệm cơm",
+        "pos": "名"
+      },
+      {
+        "h": "感觉",
+        "p": "gǎnjué",
+        "vi": "cảm thấy, cảm giác",
+        "pos": "动、名"
+      },
+      {
+        "h": "高",
+        "p": "gāo",
+        "vi": "cao",
+        "pos": "形"
+      },
+      {
+        "h": "歌词",
+        "p": "gēcí",
+        "vi": "lời bài hát",
+        "pos": "名"
+      },
+      {
+        "h": "歌曲",
+        "p": "gēqǔ",
+        "vi": "ca khúc, bài hát",
+        "pos": "名"
+      },
+      {
+        "h": "更",
+        "p": "gèng",
+        "vi": "càng, hơn",
+        "pos": "副"
+      },
+      {
+        "h": "古典",
+        "p": "gǔdiǎn",
+        "vi": "cổ điển",
+        "pos": "名"
+      },
+      {
+        "h": "光",
+        "p": "guāng",
+        "vi": "chỉ",
+        "pos": "副"
+      },
+      {
+        "h": "过去",
+        "p": "guòqù",
+        "vi": "trước đây",
+        "pos": "名"
+      },
+      {
+        "h": "还",
+        "p": "hái",
+        "vi": "còn",
+        "pos": "副"
+      },
+      {
+        "h": "家庭",
+        "p": "jiātíng",
+        "vi": "gia đình",
+        "pos": "名"
+      },
+      {
+        "h": "建筑",
+        "p": "jiànzhù",
+        "vi": "xây dựng, kiến trúc",
+        "pos": "动、名"
+      },
+      {
+        "h": "可是",
+        "p": "kěshì",
+        "vi": "nhưng mà",
+        "pos": "连"
+      },
+      {
+        "h": "流行",
+        "p": "liúxíng",
+        "vi": "lưu hành",
+        "pos": "动、形"
+      },
+      {
+        "h": "旅馆",
+        "p": "lǚguǎn",
+        "vi": "khách sạn",
+        "pos": "名"
+      },
+      {
+        "h": "迷",
+        "p": "mí",
+        "vi": "người mê (âm nhạc), mê",
+        "pos": "名、动"
+      },
+      {
+        "h": "民歌",
+        "p": "míngē",
+        "vi": "dân ca",
+        "pos": "名"
+      },
+      {
+        "h": "名曲",
+        "p": "míngqǔ",
+        "vi": "bài hát nổi tiếng",
+        "pos": "名"
+      },
+      {
+        "h": "年轻",
+        "p": "niánqīng",
+        "vi": "trẻ, trẻ tuổi",
+        "pos": "形"
+      },
+      {
+        "h": "暖和",
+        "p": "nuǎnhuo",
+        "vi": "ấm áp, ấm",
+        "pos": "形"
+      },
+      {
+        "h": "暖气",
+        "p": "nuǎnqì",
+        "vi": "hơi ấm, sưởi (bằng) hơi ấm",
+        "pos": "名"
+      },
+      {
+        "h": "漂亮",
+        "p": "piàoliang",
+        "vi": "đẹp, xinh đẹp",
+        "pos": "形"
+      },
+      {
+        "h": "气温",
+        "p": "qìwēn",
+        "vi": "nhiệt độ",
+        "pos": "名"
+      },
+      {
+        "h": "人口",
+        "p": "rénkǒu",
+        "vi": "nhân khẩu",
+        "pos": "名"
+      },
+      {
+        "h": "世界",
+        "p": "shìjiè",
+        "vi": "thế giới",
+        "pos": "名"
+      },
+      {
+        "h": "暑假",
+        "p": "shǔjià",
+        "vi": "nghỉ hè",
+        "pos": "名"
+      },
+      {
+        "h": "天气",
+        "p": "tiānqì",
+        "vi": "thời tiết",
+        "pos": "名"
+      },
+      {
+        "h": "屋子",
+        "p": "wūzi",
+        "vi": "gian nhà, gian phòng",
+        "pos": "名"
+      },
+      {
+        "h": "现代",
+        "p": "xiàndài",
+        "vi": "hiện đại",
+        "pos": "名、形"
+      },
+      {
+        "h": "遥远",
+        "p": "yáoyuǎn",
+        "vi": "xa xôi",
+        "pos": "形"
+      },
+      {
+        "h": "也许",
+        "p": "yěxǔ",
+        "vi": "có lẽ",
+        "pos": "副"
+      },
+      {
+        "h": "有些",
+        "p": "yǒuxiē",
+        "vi": "một số",
+        "pos": "代"
+      },
+      {
+        "h": "预报",
+        "p": "yùbào",
+        "vi": "dự báo",
+        "pos": "动、名"
+      },
+      {
+        "h": "增加",
+        "p": "zēngjiā",
+        "vi": "tăng thêm",
+        "pos": "动"
+      },
+      {
+        "h": "最",
+        "p": "zuì",
+        "vi": "nhất",
+        "pos": "副"
+      }
+    ]
+  },
+  {
+    "n": 2,
+    "words": [
+      {
+        "h": "不但…而且…",
+        "p": "búdàn…érqiě…",
+        "vi": "không những... mà còn..."
+      },
+      {
+        "h": "产生",
+        "p": "chǎnshēng",
+        "vi": "sản sinh, nảy sinh",
+        "pos": "动"
+      },
+      {
+        "h": "出去",
+        "p": "chūqu",
+        "vi": "đi ra ngoài",
+        "pos": "动"
+      },
+      {
+        "h": "春(天)",
+        "p": "chūn(tiān)",
+        "vi": "(mùa) xuân",
+        "pos": "名"
+      },
+      {
+        "h": "得",
+        "p": "dé",
+        "vi": "được",
+        "pos": "动"
+      },
+      {
+        "h": "分",
+        "p": "fēn",
+        "vi": "điểm (số)",
+        "pos": "量"
+      },
+      {
+        "h": "风",
+        "p": "fēng",
+        "vi": "gió",
+        "pos": "名"
+      },
+      {
+        "h": "改革",
+        "p": "gǎigé",
+        "vi": "cải cách",
+        "pos": "动、名"
+      },
+      {
+        "h": "刮风",
+        "p": "guā fēng",
+        "vi": "gió thổi, nổi gió"
+      },
+      {
+        "h": "国家",
+        "p": "guójiā",
+        "vi": "quốc gia, nước",
+        "pos": "名"
+      },
+      {
+        "h": "画册",
+        "p": "huàcè",
+        "vi": "tập tranh",
+        "pos": "名"
+      },
+      {
+        "h": "季节",
+        "p": "jìjié",
+        "vi": "mùa",
+        "pos": "名"
+      },
+      {
+        "h": "开放",
+        "p": "kāifàng",
+        "vi": "mở cửa, (hoa) nở",
+        "pos": "动"
+      },
+      {
+        "h": "老",
+        "p": "lǎo",
+        "vi": "cũ, xưa",
+        "pos": "形"
+      },
+      {
+        "h": "冷",
+        "p": "lěng",
+        "vi": "lạnh",
+        "pos": "形"
+      },
+      {
+        "h": "历史",
+        "p": "lìshǐ",
+        "vi": "lịch sử",
+        "pos": "名"
+      },
+      {
+        "h": "秋(天)",
+        "p": "qiū(tiān)",
+        "vi": "(mùa) thu",
+        "pos": "名"
+      },
+      {
+        "h": "热",
+        "p": "rè",
+        "vi": "nóng",
+        "pos": "形"
+      },
+      {
+        "h": "时差",
+        "p": "shíchā",
+        "vi": "chênh lệch (múi) giờ",
+        "pos": "名"
+      },
+      {
+        "h": "听写",
+        "p": "tīngxiě",
+        "vi": "viết chính tả, nghe viết",
+        "pos": "动"
+      },
+      {
+        "h": "夏(天)",
+        "p": "xià(tiān)",
+        "vi": "(mùa) hạ",
+        "pos": "名"
+      },
+      {
+        "h": "下雪",
+        "p": "xià xuě",
+        "vi": "mưa tuyết, tuyết rơi"
+      },
+      {
+        "h": "下雨",
+        "p": "xià yǔ",
+        "vi": "đổ mưa"
+      },
+      {
+        "h": "雪",
+        "p": "xuě",
+        "vi": "tuyết",
+        "pos": "名"
+      },
+      {
+        "h": "研究",
+        "p": "yánjiū",
+        "vi": "nghiên cứu",
+        "pos": "动、名"
+      },
+      {
+        "h": "夜",
+        "p": "yè",
+        "vi": "đêm",
+        "pos": "名"
+      },
+      {
+        "h": "一切",
+        "p": "yíqiè",
+        "vi": "tất cả, mọi thứ",
+        "pos": "形、代"
+      },
+      {
+        "h": "一样",
+        "p": "yíyàng",
+        "vi": "giống nhau",
+        "pos": "形"
+      },
+      {
+        "h": "只是",
+        "p": "zhǐshì",
+        "vi": "chỉ, chỉ là",
+        "pos": "副"
+      },
+      {
+        "h": "周末",
+        "p": "zhōumò",
+        "vi": "cuối tuần",
+        "pos": "名"
+      }
+    ]
+  },
+  {
+    "n": 3,
+    "words": [
+      {
+        "h": "哎呀",
+        "p": "āiyā",
+        "vi": "ái chà, chao ôi, trời ơi (thán từ)",
+        "pos": "叹"
+      },
+      {
+        "h": "爱",
+        "p": "ài",
+        "vi": "yêu, thích",
+        "pos": "动"
+      },
+      {
+        "h": "避暑",
+        "p": "bì shǔ",
+        "vi": "tránh nóng, nghỉ mát"
+      },
+      {
+        "h": "表",
+        "p": "biǎo",
+        "vi": "đồng hồ",
+        "pos": "名"
+      },
+      {
+        "h": "迟到",
+        "p": "chídào",
+        "vi": "đến trễ, đến muộn",
+        "pos": "动"
+      },
+      {
+        "h": "地",
+        "p": "de",
+        "vi": "(trợ từ kết cấu)",
+        "pos": "助"
+      },
+      {
+        "h": "电池",
+        "p": "diànchí",
+        "vi": "pin",
+        "pos": "名"
+      },
+      {
+        "h": "发财",
+        "p": "fā cái",
+        "vi": "phát tài"
+      },
+      {
+        "h": "风景",
+        "p": "fēngjǐng",
+        "vi": "phong cảnh",
+        "pos": "名"
+      },
+      {
+        "h": "父亲",
+        "p": "fùqin",
+        "vi": "cha, phụ thân",
+        "pos": "名"
+      },
+      {
+        "h": "该",
+        "p": "gāi",
+        "vi": "nên, phải",
+        "pos": "能愿"
+      },
+      {
+        "h": "好事",
+        "p": "hǎoshì",
+        "vi": "việc tốt",
+        "pos": "名"
+      },
+      {
+        "h": "红叶",
+        "p": "hóngyè",
+        "vi": "lá đỏ",
+        "pos": "名"
+      },
+      {
+        "h": "滑冰",
+        "p": "huá bīng",
+        "vi": "trượt băng"
+      },
+      {
+        "h": "滑雪",
+        "p": "huá xuě",
+        "vi": "trượt tuyết"
+      },
+      {
+        "h": "坏",
+        "p": "huài",
+        "vi": "hư, hỏng",
+        "pos": "形"
+      },
+      {
+        "h": "坏事",
+        "p": "huàishì",
+        "vi": "việc xấu",
+        "pos": "名"
+      },
+      {
+        "h": "家乡",
+        "p": "jiāxiāng",
+        "vi": "quê nhà, quê hương",
+        "pos": "名"
+      },
+      {
+        "h": "捡",
+        "p": "jiǎn",
+        "vi": "nhặt, lượm",
+        "pos": "动"
+      },
+      {
+        "h": "将来",
+        "p": "jiānglái",
+        "vi": "tương lai, sau này, về sau",
+        "pos": "名"
+      },
+      {
+        "h": "结婚",
+        "p": "jié hūn",
+        "vi": "kết hôn, lấy vợ (chồng)"
+      },
+      {
+        "h": "经营",
+        "p": "jīngyíng",
+        "vi": "kinh doanh, buôn bán",
+        "pos": "动"
+      },
+      {
+        "h": "靠",
+        "p": "kào",
+        "vi": "dựa vào",
+        "pos": "动"
+      },
+      {
+        "h": "啦",
+        "p": "la",
+        "vi": "(trợ từ ngữ khí) thế (ntb)",
+        "pos": "助"
+      },
+      {
+        "h": "离婚",
+        "p": "lí hūn",
+        "vi": "ly hôn"
+      },
+      {
+        "h": "凉快",
+        "p": "liángkuai",
+        "vi": "mát, mát mẻ",
+        "pos": "形"
+      },
+      {
+        "h": "落",
+        "p": "luò",
+        "vi": "rơi, rụng",
+        "pos": "动"
+      },
+      {
+        "h": "旅游",
+        "p": "lǚyóu",
+        "vi": "du lịch",
+        "pos": "动"
+      },
+      {
+        "h": "母亲",
+        "p": "mǔqin",
+        "vi": "mẹ, mẫu thân",
+        "pos": "名"
+      },
+      {
+        "h": "那样",
+        "p": "nàyàng",
+        "vi": "thế kia",
+        "pos": "代"
+      },
+      {
+        "h": "区",
+        "p": "qū",
+        "vi": "khu, khu vực",
+        "pos": "名"
+      },
+      {
+        "h": "人家",
+        "p": "rénjiā",
+        "vi": "nhà, gia đình",
+        "pos": "名"
+      },
+      {
+        "h": "树",
+        "p": "shù",
+        "vi": "cây",
+        "pos": "名"
+      },
+      {
+        "h": "树叶",
+        "p": "shùyè",
+        "vi": "lá, lá cây",
+        "pos": "名"
+      },
+      {
+        "h": "停",
+        "p": "tíng",
+        "vi": "ngừng, dừng, chết (ntb)",
+        "pos": "动"
+      },
+      {
+        "h": "未婚夫",
+        "p": "wèihūnfū",
+        "vi": "chồng chưa cưới",
+        "pos": "名"
+      },
+      {
+        "h": "未婚妻",
+        "p": "wèihūnqī",
+        "vi": "vợ chưa cưới",
+        "pos": "名"
+      },
+      {
+        "h": "叶",
+        "p": "yè",
+        "vi": "lá",
+        "pos": "名"
+      },
+      {
+        "h": "尤其",
+        "p": "yóuqí",
+        "vi": "đặc biệt (là), nhất (là)",
+        "pos": "副"
+      },
+      {
+        "h": "有名",
+        "p": "yǒumíng",
+        "vi": "nổi tiếng",
+        "pos": "形"
+      },
+      {
+        "h": "着急",
+        "p": "zháo jí",
+        "vi": "cuống, sốt ruột",
+        "pos": "形"
+      },
+      {
+        "h": "着呢",
+        "p": "zhene",
+        "vi": "(trợ từ ngữ khí) lắm",
+        "pos": "助"
+      },
+      {
+        "h": "这样",
+        "p": "zhèyàng",
+        "vi": "thế này",
+        "pos": "代"
+      }
+    ]
+  },
+  {
+    "n": 4,
+    "words": [
+      {
+        "h": "爱人",
+        "p": "àiren",
+        "vi": "chồng, vợ",
+        "pos": "名"
+      },
+      {
+        "h": "办事",
+        "p": "bàn shì",
+        "vi": "làm việc, làm công chuyện"
+      },
+      {
+        "h": "出土",
+        "p": "chū tǔ",
+        "vi": "khai quật (ntb)"
+      },
+      {
+        "h": "大使",
+        "p": "dàshǐ",
+        "vi": "đại sứ",
+        "pos": "名"
+      },
+      {
+        "h": "大使馆",
+        "p": "dàshǐguǎn",
+        "vi": "đại sứ quán",
+        "pos": "名"
+      },
+      {
+        "h": "大约",
+        "p": "dàyuē",
+        "vi": "khoảng chừng, chừng",
+        "pos": "副"
+      },
+      {
+        "h": "过来",
+        "p": "guòlai",
+        "vi": "tới",
+        "pos": "动"
+      },
+      {
+        "h": "过去",
+        "p": "guòqu",
+        "vi": "qua",
+        "pos": "动"
+      },
+      {
+        "h": "教学",
+        "p": "jiàoxué",
+        "vi": "dạy học",
+        "pos": "名"
+      },
+      {
+        "h": "经过",
+        "p": "jīngguò",
+        "vi": "qua, trải qua",
+        "pos": "动"
+      },
+      {
+        "h": "开车",
+        "p": "kāi chē",
+        "vi": "xe chạy, lái xe"
+      },
+      {
+        "h": "开会",
+        "p": "kāi huì",
+        "vi": "họp"
+      },
+      {
+        "h": "麻烦",
+        "p": "máfan",
+        "vi": "phiền toái, phiền phức, làm phiền",
+        "pos": "动、形"
+      },
+      {
+        "h": "马上",
+        "p": "mǎshàng",
+        "vi": "ngay, ngay lập tức",
+        "pos": "副"
+      },
+      {
+        "h": "慢",
+        "p": "màn",
+        "vi": "chậm",
+        "pos": "形"
+      },
+      {
+        "h": "门口",
+        "p": "ménkǒu",
+        "vi": "trước cửa",
+        "pos": "名"
+      },
+      {
+        "h": "清楚",
+        "p": "qīngchu",
+        "vi": "rõ, rõ ràng",
+        "pos": "形"
+      },
+      {
+        "h": "上来",
+        "p": "shànglai",
+        "vi": "lên",
+        "pos": "动"
+      },
+      {
+        "h": "捎",
+        "p": "shāo",
+        "vi": "tiện thể, nhân tiện đem theo, mang hộ",
+        "pos": "动"
+      },
+      {
+        "h": "声",
+        "p": "shēng",
+        "vi": "tiếng",
+        "pos": "量、名"
+      },
+      {
+        "h": "师傅",
+        "p": "shīfu",
+        "vi": "sư phụ, bác tài (ntb)",
+        "pos": "名"
+      },
+      {
+        "h": "送",
+        "p": "sòng",
+        "vi": "cho, tặng, tiễn",
+        "pos": "动"
+      },
+      {
+        "h": "趟",
+        "p": "tàng",
+        "vi": "lần, chuyến",
+        "pos": "量"
+      },
+      {
+        "h": "文物",
+        "p": "wénwù",
+        "vi": "cổ vật",
+        "pos": "名"
+      },
+      {
+        "h": "问好",
+        "p": "wèn hǎo",
+        "vi": "hỏi thăm"
+      },
+      {
+        "h": "向",
+        "p": "xiàng",
+        "vi": "với, về phía",
+        "pos": "介"
+      },
+      {
+        "h": "辛苦",
+        "p": "xīnkǔ",
+        "vi": "vất vả",
+        "pos": "形、动"
+      },
+      {
+        "h": "研讨",
+        "p": "yántǎo",
+        "vi": "nghiên cứu và thảo luận",
+        "pos": "动"
+      },
+      {
+        "h": "研讨会",
+        "p": "yántǎohuì",
+        "vi": "cuộc họp nghiên cứu và thảo luận",
+        "pos": "名"
+      },
+      {
+        "h": "要求",
+        "p": "yāoqiú",
+        "vi": "yêu cầu, nhu cầu",
+        "pos": "动、名"
+      },
+      {
+        "h": "展览",
+        "p": "zhǎnlǎn",
+        "vi": "triển lãm",
+        "pos": "动、名"
+      },
+      {
+        "h": "展览馆",
+        "p": "zhǎnlǎnguǎn",
+        "vi": "nhà triển lãm",
+        "pos": "名"
+      },
+      {
+        "h": "照相",
+        "p": "zhào xiàng",
+        "vi": "chụp hình"
+      },
+      {
+        "h": "照相机",
+        "p": "zhàoxiàngjī",
+        "vi": "máy chụp hình",
+        "pos": "名"
+      },
+      {
+        "h": "注意",
+        "p": "zhùyì",
+        "vi": "chú ý",
+        "pos": "动"
+      },
+      {
+        "h": "座位",
+        "p": "zuòwèi",
+        "vi": "chỗ ngồi",
+        "pos": "名"
+      },
+      {
+        "h": "台湾",
+        "p": "Táiwān",
+        "vi": "Đài Loan",
+        "proper": true
+      },
+      {
+        "h": "香港",
+        "p": "Xiānggǎng",
+        "vi": "Hồng Kông",
+        "proper": true
+      },
+      {
+        "h": "赵",
+        "p": "Zhào",
+        "vi": "Họ Triệu",
+        "proper": true
+      }
+    ]
+  },
+  {
+    "n": 5,
+    "words": [
+      {
+        "h": "按摩",
+        "p": "ànmó",
+        "vi": "xoa bóp, mát xa",
+        "pos": "动"
+      },
+      {
+        "h": "白薯",
+        "p": "báishǔ",
+        "vi": "khoai lang",
+        "pos": "名"
+      },
+      {
+        "h": "曾经",
+        "p": "céngjīng",
+        "vi": "đã, đã từng",
+        "pos": "副"
+      },
+      {
+        "h": "第",
+        "p": "dì",
+        "vi": "thứ (tiền tố chỉ số thứ tự)",
+        "pos": "头"
+      },
+      {
+        "h": "方法",
+        "p": "fāngfǎ",
+        "vi": "phương pháp",
+        "pos": "名"
+      },
+      {
+        "h": "钢琴",
+        "p": "gāngqín",
+        "vi": "đàn dương cầm",
+        "pos": "名"
+      },
+      {
+        "h": "过",
+        "p": "guò",
+        "vi": "(trợ từ động thái) từng, qua",
+        "pos": "助"
+      },
+      {
+        "h": "好",
+        "p": "hǎo",
+        "vi": "(chỉ số lượng nhiều)",
+        "pos": "副"
+      },
+      {
+        "h": "好听",
+        "p": "hǎotīng",
+        "vi": "hay",
+        "pos": "形"
+      },
+      {
+        "h": "还",
+        "p": "huán",
+        "vi": "trả",
+        "pos": "动"
+      },
+      {
+        "h": "极了",
+        "p": "jí le",
+        "vi": "cực kỳ, vô cùng"
+      },
+      {
+        "h": "…家",
+        "p": "…jiā",
+        "vi": "nhà (từ vĩ chỉ người nổi tiếng về một lĩnh vực)",
+        "pos": "尾"
+      },
+      {
+        "h": "经历",
+        "p": "jīnglì",
+        "vi": "từng trải, trải qua",
+        "pos": "名、动"
+      },
+      {
+        "h": "烤",
+        "p": "kǎo",
+        "vi": "nướng, quay, hơ, sưởi",
+        "pos": "动"
+      },
+      {
+        "h": "烤鸭",
+        "p": "kǎoyā",
+        "vi": "vịt quay",
+        "pos": "名"
+      },
+      {
+        "h": "苦",
+        "p": "kǔ",
+        "vi": "đắng",
+        "pos": "形"
+      },
+      {
+        "h": "嘛",
+        "p": "ma",
+        "vi": "(trợ từ ngữ khí) mà",
+        "pos": "助"
+      },
+      {
+        "h": "脉",
+        "p": "mài",
+        "vi": "mạch",
+        "pos": "名"
+      },
+      {
+        "h": "摸",
+        "p": "mō",
+        "vi": "sờ, bắt (mạch) (ntb)",
+        "pos": "动"
+      },
+      {
+        "h": "亲耳",
+        "p": "qīn'ěr",
+        "vi": "tận tai",
+        "pos": "副"
+      },
+      {
+        "h": "曲",
+        "p": "qǔ",
+        "vi": "bản nhạc",
+        "pos": "名"
+      },
+      {
+        "h": "什么的",
+        "p": "shénmede",
+        "vi": "vân vân",
+        "pos": "助"
+      },
+      {
+        "h": "糖",
+        "p": "táng",
+        "vi": "đường",
+        "pos": "名"
+      },
+      {
+        "h": "糖葫芦",
+        "p": "tánghúlu",
+        "vi": "xâu mứt quả",
+        "pos": "名"
+      },
+      {
+        "h": "甜",
+        "p": "tián",
+        "vi": "ngọt",
+        "pos": "形"
+      },
+      {
+        "h": "细",
+        "p": "xì",
+        "vi": "mảnh, hẹp, mịn, (âm thanh) nhỏ",
+        "pos": "形"
+      },
+      {
+        "h": "小提琴",
+        "p": "xiǎotíqín",
+        "vi": "đàn vi-ô-lin",
+        "pos": "名"
+      },
+      {
+        "h": "协奏曲",
+        "p": "xiézòuqǔ",
+        "vi": "bản hoà tấu, bản concerto",
+        "pos": "名"
+      },
+      {
+        "h": "演奏",
+        "p": "yǎnzòu",
+        "vi": "diễn tấu",
+        "pos": "动"
+      },
+      {
+        "h": "药方",
+        "p": "yàofāng",
+        "vi": "đơn thuốc, bài thuốc",
+        "pos": "名"
+      },
+      {
+        "h": "扎针",
+        "p": "zhā zhēn",
+        "vi": "châm kim"
+      },
+      {
+        "h": "针灸",
+        "p": "zhēnjiǔ",
+        "vi": "châm cứu",
+        "pos": "名、动"
+      },
+      {
+        "h": "治",
+        "p": "zhì",
+        "vi": "chữa trị",
+        "pos": "动"
+      },
+      {
+        "h": "中餐",
+        "p": "zhōngcān",
+        "vi": "bữa cơm, món ăn Trung Quốc",
+        "pos": "名"
+      },
+      {
+        "h": "中成药",
+        "p": "zhōngchéngyào",
+        "vi": "thuốc bắc bào chế sẵn",
+        "pos": "名"
+      },
+      {
+        "h": "中医",
+        "p": "zhōngyī",
+        "vi": "Đông y",
+        "pos": "名"
+      },
+      {
+        "h": "住院",
+        "p": "zhù yuàn",
+        "vi": "nằm viện"
+      },
+      {
+        "h": "长城",
+        "p": "Chángchéng",
+        "vi": "Trường Thành",
+        "proper": true
+      },
+      {
+        "h": "敦煌",
+        "p": "Dūnhuáng",
+        "vi": "Đôn Hoàng",
+        "proper": true
+      },
+      {
+        "h": "故宫",
+        "p": "Gùgōng",
+        "vi": "Cố Cung",
+        "proper": true
+      },
+      {
+        "h": "哈尔滨",
+        "p": "Hā'ěrbīn",
+        "vi": "Cáp Nhĩ Tân",
+        "proper": true
+      },
+      {
+        "h": "海南岛",
+        "p": "Hǎinán Dǎo",
+        "vi": "Đảo Hải Nam",
+        "proper": true
+      },
+      {
+        "h": "黄河",
+        "p": "Huánghé",
+        "vi": "Hoàng Hà",
+        "proper": true
+      },
+      {
+        "h": "《梁祝》",
+        "p": "Liáng Zhù",
+        "vi": "Lương Sơn Bá, Chúc Anh Đài",
+        "proper": true
+      },
+      {
+        "h": "泰山",
+        "p": "Tài Shān",
+        "vi": "Núi Thái Sơn",
+        "proper": true
+      },
+      {
+        "h": "西安",
+        "p": "Xī'ān",
+        "vi": "Tây An",
+        "proper": true
+      },
+      {
+        "h": "颐和园",
+        "p": "Yíhéyuán",
+        "vi": "Di Hòa Viên",
+        "proper": true
+      }
+    ]
+  },
+  {
+    "n": 6,
+    "words": [
+      {
+        "h": "安排",
+        "p": "ānpái",
+        "vi": "sắp xếp",
+        "pos": "动、名"
+      },
+      {
+        "h": "帮",
+        "p": "bāng",
+        "vi": "giúp, giúp đỡ",
+        "pos": "动"
+      },
+      {
+        "h": "帮助",
+        "p": "bāngzhù",
+        "vi": "giúp đỡ",
+        "pos": "动、名"
+      },
+      {
+        "h": "鼻子",
+        "p": "bízi",
+        "vi": "(cái) mũi",
+        "pos": "名"
+      },
+      {
+        "h": "打工",
+        "p": "dǎgōng",
+        "vi": "đi làm, làm thuê"
+      },
+      {
+        "h": "导游",
+        "p": "dǎoyóu",
+        "vi": "hướng dẫn viên du lịch",
+        "pos": "名"
+      },
+      {
+        "h": "风光",
+        "p": "fēngguāng",
+        "vi": "phong cảnh",
+        "pos": "名"
+      },
+      {
+        "h": "故乡",
+        "p": "gùxiāng",
+        "vi": "quê hương",
+        "pos": "名"
+      },
+      {
+        "h": "后天",
+        "p": "hòutiān",
+        "vi": "ngày mốt, ngày kia",
+        "pos": "名"
+      },
+      {
+        "h": "互相",
+        "p": "hùxiāng",
+        "vi": "lẫn nhau",
+        "pos": "副"
+      },
+      {
+        "h": "活动",
+        "p": "huódòng",
+        "vi": "hoạt động",
+        "pos": "名、动"
+      },
+      {
+        "h": "假期",
+        "p": "jiàqī",
+        "vi": "kỳ nghỉ, thời gian nghỉ",
+        "pos": "名"
+      },
+      {
+        "h": "经常",
+        "p": "jīngcháng",
+        "vi": "thường xuyên",
+        "pos": "副"
+      },
+      {
+        "h": "老板",
+        "p": "lǎobǎn",
+        "vi": "ông chủ",
+        "pos": "名"
+      },
+      {
+        "h": "老外",
+        "p": "lǎowài",
+        "vi": "người nước ngoài",
+        "pos": "名"
+      },
+      {
+        "h": "利用",
+        "p": "lìyòng",
+        "vi": "lợi dụng, nhân (dịp)",
+        "pos": "动"
+      },
+      {
+        "h": "旅行社",
+        "p": "lǚxíngshè",
+        "vi": "công ty du lịch",
+        "pos": "名"
+      },
+      {
+        "h": "前天",
+        "p": "qiántiān",
+        "vi": "hôm kia",
+        "pos": "名"
+      },
+      {
+        "h": "商量",
+        "p": "shāngliang",
+        "vi": "thương lượng, bàn bạc",
+        "pos": "动"
+      },
+      {
+        "h": "声调",
+        "p": "shēngdiào",
+        "vi": "thanh điệu",
+        "pos": "名"
+      },
+      {
+        "h": "收集",
+        "p": "shōují",
+        "vi": "thu thập",
+        "pos": "动"
+      },
+      {
+        "h": "铁路",
+        "p": "tiělù",
+        "vi": "đường sắt",
+        "pos": "名"
+      },
+      {
+        "h": "头发",
+        "p": "tóufa",
+        "vi": "tóc",
+        "pos": "名"
+      },
+      {
+        "h": "希望",
+        "p": "xīwàng",
+        "vi": "mong, hy vọng",
+        "pos": "动、名"
+      },
+      {
+        "h": "需要",
+        "p": "xūyào",
+        "vi": "cần",
+        "pos": "动、名"
+      },
+      {
+        "h": "呀",
+        "p": "ya",
+        "vi": "a, ô",
+        "pos": "助"
+      },
+      {
+        "h": "研究生",
+        "p": "yánjiūshēng",
+        "vi": "nghiên cứu sinh",
+        "pos": "名"
+      },
+      {
+        "h": "眼睛",
+        "p": "yǎnjing",
+        "vi": "con mắt",
+        "pos": "名"
+      },
+      {
+        "h": "一…就…",
+        "p": "yī…jiù…",
+        "vi": "vừa... liền..., hễ (cứ) là (thì)..."
+      },
+      {
+        "h": "自由",
+        "p": "zìyóu",
+        "vi": "tự do",
+        "pos": "形"
+      },
+      {
+        "h": "组织",
+        "p": "zǔzhī",
+        "vi": "tổ chức",
+        "pos": "动、名"
+      },
+      {
+        "h": "丹尼丝",
+        "p": "Dānnísī",
+        "vi": "Denise",
+        "proper": true
+      },
+      {
+        "h": "孔子",
+        "p": "Kǒngzǐ",
+        "vi": "Khổng Tử",
+        "proper": true
+      },
+      {
+        "h": "深圳",
+        "p": "Shēnzhèn",
+        "vi": "Thẩm Quyến",
+        "proper": true
+      }
+    ]
+  },
+  {
+    "n": 7,
+    "words": [
+      {
+        "h": "白天",
+        "p": "báitiān",
+        "vi": "ban ngày",
+        "pos": "名"
+      },
+      {
+        "h": "半天",
+        "p": "bàntiān",
+        "vi": "nửa ngày, hồi lâu",
+        "pos": "名"
+      },
+      {
+        "h": "棒",
+        "p": "bàng",
+        "vi": "giỏi, cừ",
+        "pos": "形"
+      },
+      {
+        "h": "成",
+        "p": "chéng",
+        "vi": "trở thành, thành",
+        "pos": "动"
+      },
+      {
+        "h": "程度",
+        "p": "chéngdù",
+        "vi": "mức độ",
+        "pos": "名"
+      },
+      {
+        "h": "承认",
+        "p": "chéngrèn",
+        "vi": "thừa nhận, công nhận",
+        "pos": "动"
+      },
+      {
+        "h": "辞职",
+        "p": "cí zhí",
+        "vi": "từ chức"
+      },
+      {
+        "h": "大衣",
+        "p": "dàyī",
+        "vi": "áo khoác",
+        "pos": "名"
+      },
+      {
+        "h": "丢",
+        "p": "diū",
+        "vi": "vứt",
+        "pos": "动"
+      },
+      {
+        "h": "丢三落四",
+        "p": "diū sān là sì",
+        "vi": "quên trước quên sau"
+      },
+      {
+        "h": "多的是",
+        "p": "duō de shì",
+        "vi": "nhiều lắm, vô khối"
+      },
+      {
+        "h": "发狂",
+        "p": "fā kuáng",
+        "vi": "phát điên"
+      },
+      {
+        "h": "发现",
+        "p": "fāxiàn",
+        "vi": "phát hiện",
+        "pos": "动"
+      },
+      {
+        "h": "放",
+        "p": "fàng",
+        "vi": "để, đặt",
+        "pos": "动"
+      },
+      {
+        "h": "够",
+        "p": "gòu",
+        "vi": "đủ, rất",
+        "pos": "副"
+      },
+      {
+        "h": "好好儿",
+        "p": "hǎohāor",
+        "vi": "thật kỹ, gắng (ntb)",
+        "pos": "副"
+      },
+      {
+        "h": "锦标赛",
+        "p": "jǐnbiāosài",
+        "vi": "giải vô địch",
+        "pos": "名"
+      },
+      {
+        "h": "交",
+        "p": "jiāo",
+        "vi": "giao, nộp",
+        "pos": "动"
+      },
+      {
+        "h": "精神",
+        "p": "jīngshen",
+        "vi": "tinh thần, hăng hái",
+        "pos": "形"
+      },
+      {
+        "h": "可",
+        "p": "kě",
+        "vi": "nhưng",
+        "pos": "副"
+      },
+      {
+        "h": "口袋",
+        "p": "kǒudai",
+        "vi": "túi",
+        "pos": "名"
+      },
+      {
+        "h": "落",
+        "p": "là",
+        "vi": "bỏ quên",
+        "pos": "动"
+      },
+      {
+        "h": "佩服",
+        "p": "pèifú",
+        "vi": "khâm phục",
+        "pos": "动"
+      },
+      {
+        "h": "期间",
+        "p": "qījiān",
+        "vi": "trong thời gian",
+        "pos": "名"
+      },
+      {
+        "h": "签证",
+        "p": "qiānzhèng",
+        "vi": "thị thực, visa",
+        "pos": "名"
+      },
+      {
+        "h": "亲眼",
+        "p": "qīnyǎn",
+        "vi": "tận mắt",
+        "pos": "副"
+      },
+      {
+        "h": "球迷",
+        "p": "qiúmí",
+        "vi": "fan bóng đá",
+        "pos": "名"
+      },
+      {
+        "h": "生病",
+        "p": "shēng bìng",
+        "vi": "mắc bệnh"
+      },
+      {
+        "h": "世界杯",
+        "p": "shìjièbēi",
+        "vi": "cúp thế giới",
+        "pos": "名"
+      },
+      {
+        "h": "手提包",
+        "p": "shǒutíbāo",
+        "vi": "túi xách tay",
+        "pos": "名"
+      },
+      {
+        "h": "算",
+        "p": "suàn",
+        "vi": "coi là, coi như",
+        "pos": "动"
+      },
+      {
+        "h": "贴",
+        "p": "tiē",
+        "vi": "dán",
+        "pos": "动"
+      },
+      {
+        "h": "通知",
+        "p": "tōngzhī",
+        "vi": "thông báo",
+        "pos": "名、动"
+      },
+      {
+        "h": "为了",
+        "p": "wèile",
+        "vi": "để",
+        "pos": "介"
+      },
+      {
+        "h": "像",
+        "p": "xiàng",
+        "vi": "giống như",
+        "pos": "动"
+      },
+      {
+        "h": "营业",
+        "p": "yíngyè",
+        "vi": "kinh doanh",
+        "pos": "动"
+      },
+      {
+        "h": "暂停",
+        "p": "zàntíng",
+        "vi": "tạm ngừng",
+        "pos": "动"
+      },
+      {
+        "h": "着",
+        "p": "zháo",
+        "vi": "được, thấy",
+        "pos": "动"
+      },
+      {
+        "h": "正常",
+        "p": "zhèngcháng",
+        "vi": "bình thường",
+        "pos": "形"
+      },
+      {
+        "h": "准",
+        "p": "zhǔn",
+        "vi": "cho phép",
+        "pos": "动"
+      },
+      {
+        "h": "最后",
+        "p": "zuìhòu",
+        "vi": "cuối cùng, sau cùng",
+        "pos": "名"
+      },
+      {
+        "h": "欧洲",
+        "p": "Ōuzhōu",
+        "vi": "Châu Âu",
+        "proper": true
+      },
+      {
+        "h": "夏雨",
+        "p": "Xià Yǔ",
+        "vi": "Hạ Vũ",
+        "proper": true
+      }
+    ]
+  },
+  {
+    "n": 8,
+    "words": [
+      {
+        "h": "保证",
+        "p": "bǎozhèng",
+        "vi": "bảo đảm",
+        "pos": "动"
+      },
+      {
+        "h": "倍",
+        "p": "bèi",
+        "vi": "lần",
+        "pos": "量"
+      },
+      {
+        "h": "闭",
+        "p": "bì",
+        "vi": "nhắm",
+        "pos": "动"
+      },
+      {
+        "h": "别提了",
+        "p": "bié tí le",
+        "vi": "đừng nhắc đến nữa"
+      },
+      {
+        "h": "差(一)点儿",
+        "p": "chà (yi) diǎnr",
+        "vi": "suýt nữa, chút nữa"
+      },
+      {
+        "h": "倒霉",
+        "p": "dǎoméi",
+        "vi": "đen đủi, xui xẻo",
+        "pos": "形"
+      },
+      {
+        "h": "地上",
+        "p": "dìshang",
+        "vi": "mặt đất, đất (ntb)",
+        "pos": "名"
+      },
+      {
+        "h": "掉",
+        "p": "diào",
+        "vi": "rơi, rớt",
+        "pos": "动"
+      },
+      {
+        "h": "发展",
+        "p": "fāzhǎn",
+        "vi": "phát triển",
+        "pos": "动"
+      },
+      {
+        "h": "放大",
+        "p": "fàngdà",
+        "vi": "phóng lớn",
+        "pos": "动"
+      },
+      {
+        "h": "赶快",
+        "p": "gǎnkuài",
+        "vi": "nhanh chóng, mau mau",
+        "pos": "副"
+      },
+      {
+        "h": "公分",
+        "p": "gōngfēn",
+        "vi": "centimét",
+        "pos": "量"
+      },
+      {
+        "h": "规则",
+        "p": "guīzé",
+        "vi": "quy tắc, luật lệ",
+        "pos": "名"
+      },
+      {
+        "h": "碰",
+        "p": "pèng",
+        "vi": "gặp phải, vấp phải",
+        "pos": "动"
+      },
+      {
+        "h": "起",
+        "p": "qǐ",
+        "vi": "(lượng từ) vụ",
+        "pos": "量"
+      },
+      {
+        "h": "上班",
+        "p": "shàng bān",
+        "vi": "đi làm"
+      },
+      {
+        "h": "事故",
+        "p": "shìgù",
+        "vi": "sự cố, tai nạn",
+        "pos": "名"
+      },
+      {
+        "h": "摔",
+        "p": "shuāi",
+        "vi": "ngã, té",
+        "pos": "动"
+      },
+      {
+        "h": "摔跤",
+        "p": "shuāi jiāo",
+        "vi": "té, ngã"
+      },
+      {
+        "h": "洗",
+        "p": "xǐ",
+        "vi": "rửa",
+        "pos": "动"
+      },
+      {
+        "h": "下班",
+        "p": "xià bān",
+        "vi": "tan ca"
+      },
+      {
+        "h": "眼镜",
+        "p": "yǎnjìng",
+        "vi": "kính, kiếng mắt",
+        "pos": "名"
+      },
+      {
+        "h": "引起",
+        "p": "yǐnqǐ",
+        "vi": "dẫn đến, gây ra",
+        "pos": "动"
+      },
+      {
+        "h": "拥挤",
+        "p": "yōngjǐ",
+        "vi": "chen chúc",
+        "pos": "动、形"
+      },
+      {
+        "h": "油画",
+        "p": "yóuhuà",
+        "vi": "tranh sơn dầu",
+        "pos": "名"
+      },
+      {
+        "h": "原因",
+        "p": "yuányīn",
+        "vi": "nguyên nhân",
+        "pos": "名"
+      },
+      {
+        "h": "造成",
+        "p": "zàochéng",
+        "vi": "tạo thành",
+        "pos": "动"
+      },
+      {
+        "h": "照",
+        "p": "zhào",
+        "vi": "chụp, chiếu",
+        "pos": "动"
+      },
+      {
+        "h": "整",
+        "p": "zhěng",
+        "vi": "suốt",
+        "pos": "形"
+      },
+      {
+        "h": "之一",
+        "p": "zhī yī",
+        "vi": "một trong những"
+      },
+      {
+        "h": "主要",
+        "p": "zhǔyào",
+        "vi": "chủ yếu",
+        "pos": "形"
+      },
+      {
+        "h": "遵守",
+        "p": "zūnshǒu",
+        "vi": "tuân theo, chấp hành",
+        "pos": "动"
+      }
+    ]
+  },
+  {
+    "n": 9,
+    "words": [
+      {
+        "h": "拔",
+        "p": "bá",
+        "vi": "rút",
+        "pos": "动"
+      },
+      {
+        "h": "步",
+        "p": "bù",
+        "vi": "bước",
+        "pos": "量"
+      },
+      {
+        "h": "插",
+        "p": "chā",
+        "vi": "cắm",
+        "pos": "动"
+      },
+      {
+        "h": "抽",
+        "p": "chōu",
+        "vi": "rút",
+        "pos": "动"
+      },
+      {
+        "h": "除了…以外",
+        "p": "chúle…yǐwài",
+        "vi": "ngoài....ra"
+      },
+      {
+        "h": "电梯",
+        "p": "diàntī",
+        "vi": "thang máy",
+        "pos": "名"
+      },
+      {
+        "h": "饭馆",
+        "p": "fànguǎn",
+        "vi": "tiệm cơm, nhà hàng, quán ăn",
+        "pos": "名"
+      },
+      {
+        "h": "各",
+        "p": "gè",
+        "vi": "các",
+        "pos": "代"
+      },
+      {
+        "h": "各种各样",
+        "p": "gè zhǒng gè yàng",
+        "vi": "các loại"
+      },
+      {
+        "h": "根据",
+        "p": "gēnjù",
+        "vi": "dựa theo, căn cứ",
+        "pos": "介"
+      },
+      {
+        "h": "盒",
+        "p": "hé",
+        "vi": "hộp",
+        "pos": "量"
+      },
+      {
+        "h": "忽然",
+        "p": "hūrán",
+        "vi": "bỗng, chợt, đột nhiên",
+        "pos": "副"
+      },
+      {
+        "h": "回去",
+        "p": "huíqu",
+        "vi": "về, quay về",
+        "pos": "动"
+      },
+      {
+        "h": "进去",
+        "p": "jìnqu",
+        "vi": "đi vào",
+        "pos": "动"
+      },
+      {
+        "h": "哭笑不得",
+        "p": "kū xiào bù dé",
+        "vi": "dở khóc dở cười"
+      },
+      {
+        "h": "困",
+        "p": "kùn",
+        "vi": "buồn ngủ",
+        "pos": "形"
+      },
+      {
+        "h": "累",
+        "p": "lèi",
+        "vi": "mệt",
+        "pos": "形"
+      },
+      {
+        "h": "楼梯",
+        "p": "lóutī",
+        "vi": "cầu thang",
+        "pos": "名"
+      },
+      {
+        "h": "那里",
+        "p": "nàli",
+        "vi": "ở kia",
+        "pos": "代"
+      },
+      {
+        "h": "拍",
+        "p": "pāi",
+        "vi": "chụp, quay, đóng (phim)",
+        "pos": "动"
+      },
+      {
+        "h": "盘",
+        "p": "pán",
+        "vi": "khay, đĩa",
+        "pos": "量"
+      },
+      {
+        "h": "起来",
+        "p": "qǐlai",
+        "vi": "(làm bổ ngữ xu hướng kép)",
+        "pos": "动"
+      },
+      {
+        "h": "却",
+        "p": "què",
+        "vi": "nhưng, lại",
+        "pos": "副"
+      },
+      {
+        "h": "书架",
+        "p": "shūjià",
+        "vi": "giá sách",
+        "pos": "名"
+      },
+      {
+        "h": "提",
+        "p": "tí",
+        "vi": "mang, nâng, xách",
+        "pos": "动"
+      },
+      {
+        "h": "挑",
+        "p": "tiāo",
+        "vi": "lựa chọn",
+        "pos": "动"
+      },
+      {
+        "h": "图书",
+        "p": "túshū",
+        "vi": "sách vở",
+        "pos": "名"
+      },
+      {
+        "h": "图书城",
+        "p": "túshūchéng",
+        "vi": "siêu thị sách",
+        "pos": "名"
+      },
+      {
+        "h": "维修",
+        "p": "wéixiū",
+        "vi": "tu sửa",
+        "pos": "动"
+      },
+      {
+        "h": "下",
+        "p": "xià",
+        "vi": "kỳ sau, kỳ tới (ntb)",
+        "pos": "名"
+      },
+      {
+        "h": "下来",
+        "p": "xiàlai",
+        "vi": "xuống",
+        "pos": "动"
+      },
+      {
+        "h": "想起来",
+        "p": "xiǎng qǐlai",
+        "vi": "nhớ ra"
+      },
+      {
+        "h": "小说",
+        "p": "xiǎoshuō",
+        "vi": "tiểu thuyết",
+        "pos": "名"
+      },
+      {
+        "h": "兴奋",
+        "p": "xīngfèn",
+        "vi": "phấn khởi, háo hức",
+        "pos": "形"
+      },
+      {
+        "h": "修",
+        "p": "xiū",
+        "vi": "sửa chữa",
+        "pos": "动"
+      },
+      {
+        "h": "选",
+        "p": "xuǎn",
+        "vi": "chọn",
+        "pos": "动"
+      },
+      {
+        "h": "学期",
+        "p": "xuéqī",
+        "vi": "(học kỳ) sau, (học kỳ) tới (ntb)",
+        "pos": "名"
+      },
+      {
+        "h": "样",
+        "p": "yàng",
+        "vi": "loại, mẫu, kiểu",
+        "pos": "量"
+      },
+      {
+        "h": "钥匙",
+        "p": "yàoshi",
+        "vi": "chìa khoá",
+        "pos": "名"
+      },
+      {
+        "h": "音像",
+        "p": "yīnxiàng",
+        "vi": "âm và hình, nghe nhìn",
+        "pos": "名"
+      },
+      {
+        "h": "于是",
+        "p": "yúshì",
+        "vi": "thế là",
+        "pos": "连"
+      },
+      {
+        "h": "这里",
+        "p": "zhèli",
+        "vi": "ở đây",
+        "pos": "代"
+      },
+      {
+        "h": "纸",
+        "p": "zhí",
+        "vi": "giấy",
+        "pos": "名"
+      },
+      {
+        "h": "只好",
+        "p": "zhǐhǎo",
+        "vi": "chỉ, đành, đành phải",
+        "pos": "副"
+      },
+      {
+        "h": "纸箱",
+        "p": "zhǐxiāng",
+        "vi": "hộp giấy",
+        "pos": "名"
+      },
+      {
+        "h": "鲁迅",
+        "p": "Lǔ Xùn",
+        "vi": "Lỗ Tấn",
+        "proper": true
+      },
+      {
+        "h": "《药》",
+        "p": "Yào",
+        "vi": "\"Thuốc\"",
+        "proper": true
+      },
+      {
+        "h": "《祝福》",
+        "p": "Zhùfú",
+        "vi": "\"Chúc Phúc\"",
+        "proper": true
+      }
+    ]
+  },
+  {
+    "n": 10,
+    "words": [
+      {
+        "h": "摆",
+        "p": "bǎi",
+        "vi": "bày, đặt",
+        "pos": "动"
+      },
+      {
+        "h": "不停",
+        "p": "bùtíng",
+        "vi": "không ngừng, không ngớt",
+        "pos": "副"
+      },
+      {
+        "h": "穿",
+        "p": "chuān",
+        "vi": "mặc, bận (quần áo)",
+        "pos": "动"
+      },
+      {
+        "h": "戴",
+        "p": "dài",
+        "vi": "đeo",
+        "pos": "动"
+      },
+      {
+        "h": "倒",
+        "p": "dào",
+        "vi": "rót",
+        "pos": "动"
+      },
+      {
+        "h": "灯笼",
+        "p": "dēnglong",
+        "vi": "đèn lồng",
+        "pos": "名"
+      },
+      {
+        "h": "服务员",
+        "p": "fúwùyuán",
+        "vi": "nhân viên phục vụ",
+        "pos": "名"
+      },
+      {
+        "h": "副",
+        "p": "fù",
+        "vi": "cặp, đôi, bộ",
+        "pos": "量"
+      },
+      {
+        "h": "干",
+        "p": "gàn",
+        "vi": "làm",
+        "pos": "动"
+      },
+      {
+        "h": "个子",
+        "p": "gèzi",
+        "vi": "dáng người"
+      },
+      {
+        "h": "挂",
+        "p": "guà",
+        "vi": "treo, mắc",
+        "pos": "动"
+      },
+      {
+        "h": "会议厅",
+        "p": "huìyìtīng",
+        "vi": "phòng hội nghị, hội trường",
+        "pos": "名"
+      },
+      {
+        "h": "婚礼",
+        "p": "hūnlǐ",
+        "vi": "đám cưới, hôn lễ",
+        "pos": "名"
+      },
+      {
+        "h": "讲话",
+        "p": "jiǎng huà",
+        "vi": "nói chuyện, nói"
+      },
+      {
+        "h": "扛",
+        "p": "káng",
+        "vi": "vác",
+        "pos": "动"
+      },
+      {
+        "h": "客人",
+        "p": "kèrén",
+        "vi": "khách, khách khứa",
+        "pos": "名"
+      },
+      {
+        "h": "领带",
+        "p": "lǐngdài",
+        "vi": "cà vạt",
+        "pos": "名"
+      },
+      {
+        "h": "麦克风",
+        "p": "màikèfēng",
+        "vi": "mi-crô",
+        "pos": "名"
+      },
+      {
+        "h": "棉袄",
+        "p": "mián'ǎo",
+        "vi": "áo bông",
+        "pos": "名"
+      },
+      {
+        "h": "气氛",
+        "p": "qìfēn",
+        "vi": "không khí, bầu không khí",
+        "pos": "名"
+      },
+      {
+        "h": "墙",
+        "p": "qiáng",
+        "vi": "tường",
+        "pos": "名"
+      },
+      {
+        "h": "裙子",
+        "p": "qúnzi",
+        "vi": "váy",
+        "pos": "名"
+      },
+      {
+        "h": "热闹",
+        "p": "rènao",
+        "vi": "nhộn nhịp, đông vui, náo nhiệt",
+        "pos": "形"
+      },
+      {
+        "h": "热情",
+        "p": "rèqíng",
+        "vi": "nhiệt tình",
+        "pos": "形"
+      },
+      {
+        "h": "摄像机",
+        "p": "shèxiàngjī",
+        "vi": "máy quay video",
+        "pos": "名"
+      },
+      {
+        "h": "帅",
+        "p": "shuài",
+        "vi": "kểng, đẹp trai",
+        "pos": "形"
+      },
+      {
+        "h": "厅",
+        "p": "tīng",
+        "vi": "sảnh, phòng lớn",
+        "pos": "名"
+      },
+      {
+        "h": "西服",
+        "p": "xīfú",
+        "vi": "âu phục, đồ vest",
+        "pos": "名"
+      },
+      {
+        "h": "喜",
+        "p": "xǐ",
+        "vi": "vui, (chữ) hỷ",
+        "pos": "形"
+      },
+      {
+        "h": "小伙子",
+        "p": "xiǎohuǒzi",
+        "vi": "chàng trai, anh thanh niên",
+        "pos": "名"
+      },
+      {
+        "h": "新郎",
+        "p": "xīnláng",
+        "vi": "chú rể",
+        "pos": "名"
+      },
+      {
+        "h": "新娘",
+        "p": "xīnniáng",
+        "vi": "cô dâu",
+        "pos": "名"
+      },
+      {
+        "h": "长",
+        "p": "zhǎng",
+        "vi": "(miêu tả vóc dáng/dung mạo) trông (dáng vẻ)",
+        "pos": "动"
+      },
+      {
+        "h": "着",
+        "p": "zhe",
+        "vi": "(trợ từ động thái)",
+        "pos": "助"
+      },
+      {
+        "h": "中心",
+        "p": "zhōngxīn",
+        "vi": "trung tâm",
+        "pos": "名"
+      },
+      {
+        "h": "主持",
+        "p": "zhǔchí",
+        "vi": "chủ trì",
+        "pos": "动"
+      },
+      {
+        "h": "主持人",
+        "p": "zhǔchírén",
+        "vi": "người dẫn chương trình, MC",
+        "pos": "名"
+      },
+      {
+        "h": "左右",
+        "p": "zuǒyòu",
+        "vi": "khoảng",
+        "pos": "助"
+      }
+    ]
+  }
+]

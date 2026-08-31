@@ -1,12 +1,13 @@
 // Service worker tối giản: cho phép học offline vì toàn bộ dữ liệu từ vựng
 // và tiến độ (localStorage) đã nằm sẵn trên máy — chỉ cần cache HTML + JS/CSS.
 // Tăng số ở CACHE mỗi khi đổi chiến lược cache để buộc dọn cache cũ.
-const CACHE = "hsk16-v1";
+const CACHE = "hsk16-v2";
 
 const APP_SHELL = [
   "/",
   "/lotrinh",
   "/flashcards",
+  "/giaotrinh",
   "/onsai",
   "/quiz",
   "/viet",
