@@ -1,9 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { LEVELS, meaning, type Word } from "@/data/hsk";
+import { LEVELS, meaning, wordKey, type Word } from "@/data/hsk";
 import { LevelPicker, useLevel } from "@/components/LevelPicker";
 import { initTTS, speak } from "@/lib/tts";
+import { recordCorrect, recordMistake } from "@/lib/mistakes";
 
 type Mode = "nghia" | "chu" | "nghe";
 type Question = { word: Word; choices: Word[] };
@@ -68,7 +69,13 @@ export default function Quiz() {
   function pick(w: Word) {
     if (picked !== null) return;
     setPicked(w.h);
-    if (w.h === q.word.h) setScore((s) => s + 1);
+    const key = wordKey(level, q.word);
+    if (w.h === q.word.h) {
+      setScore((s) => s + 1);
+      recordCorrect(key);
+    } else {
+      recordMistake(key); // trả lời sai — gom vào sổ từ sai để ôn tập trung
+    }
   }
 
   if (!mode) {

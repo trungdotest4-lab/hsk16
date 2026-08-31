@@ -31,6 +31,12 @@ const FEATURES = [
     desc: "Quiz chọn nghĩa, chọn chữ và luyện nghe theo từng cấp độ HSK.",
   },
   {
+    href: "/onsai",
+    hanzi: "错",
+    title: "Sổ từ sai",
+    desc: "Gom lại những từ bạn hay trả lời sai để ôn tập trung, nhớ nhanh hơn.",
+  },
+  {
     href: "/tailieu",
     hanzi: "书",
     title: "Kho tài liệu",

@@ -8,6 +8,7 @@ import { LEVELS, LEVEL_NUMBERS, wordKey } from "@/data/hsk";
 import { loadProgress, type Progress } from "@/lib/srs";
 import { getSupabase } from "@/lib/supabase";
 import { fullSync } from "@/lib/sync";
+import { loadMistakes } from "@/lib/mistakes";
 
 // Thông tin mô tả từng chặng lộ trình HSK
 const ROADMAP: Record<
@@ -106,10 +107,12 @@ export default function LoTrinh() {
   const router = useRouter();
   const [user, setUser] = useState<User | null>(null);
   const [stats, setStats] = useState<Record<number, LevelStat>>({});
+  const [mistakeCount, setMistakeCount] = useState(0);
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
     setStats(calcStats(loadProgress()));
+    setMistakeCount(Object.keys(loadMistakes()).length);
     const sb = getSupabase();
     if (!sb) {
       setReady(true);
@@ -171,22 +174,33 @@ export default function LoTrinh() {
       </div>
 
       {/* Thẻ số liệu tổng quan */}
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
         {[
           { label: "Từ đã học", value: totalLearned, sub: `/ ${totalWords.toLocaleString("vi")} từ` },
           { label: "Thành thạo", value: totalMastered, sub: "ôn đủ 4 vòng" },
           { label: "Đến hạn ôn", value: totalDue, sub: "cần ôn hôm nay" },
+          { label: "Từ hay sai", value: mistakeCount, sub: "trong sổ từ sai", href: "/onsai" },
           { label: "Chặng hiện tại", value: `HSK${currentLevel}`, sub: ROADMAP[currentLevel].goal.split("—")[0].trim() },
-        ].map((c) => (
-          <div
-            key={c.label}
-            className="rounded-2xl border border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900 p-4"
-          >
-            <p className="text-xs text-stone-500">{c.label}</p>
-            <p className="text-2xl font-bold text-red-600 mt-0.5">{c.value}</p>
-            <p className="text-[11px] text-stone-400 mt-0.5">{c.sub}</p>
-          </div>
-        ))}
+        ].map((c) => {
+          const content = (
+            <>
+              <p className="text-xs text-stone-500">{c.label}</p>
+              <p className="text-2xl font-bold text-red-600 mt-0.5">{c.value}</p>
+              <p className="text-[11px] text-stone-400 mt-0.5">{c.sub}</p>
+            </>
+          );
+          const cls =
+            "rounded-2xl border border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900 p-4";
+          return c.href ? (
+            <Link key={c.label} href={c.href} className={`${cls} hover:border-red-300 dark:hover:border-red-800 transition-colors`}>
+              {content}
+            </Link>
+          ) : (
+            <div key={c.label} className={cls}>
+              {content}
+            </div>
+          );
+        })}
       </div>
 
       {totalDue > 0 && (

@@ -16,10 +16,10 @@ for (const m of hsk1ts.matchAll(/h:\s*"([^"]+)",\s*p:\s*"[^"]*",\s*vi:\s*"([^"]+
   vi1[m[1]] = m[2];
 }
 
-// Đọc file nghĩa Việt nếu có, chưa có thì trả về map rỗng
-function readViMap(n) {
+// Đọc file JSON phụ trợ theo cấp nếu có, chưa có thì trả về map rỗng
+function readMap(prefix, n) {
   try {
-    return JSON.parse(readFileSync(join(ROOT, `scripts/vi-hsk${n}.json`), "utf8"));
+    return JSON.parse(readFileSync(join(ROOT, `scripts/${prefix}-hsk${n}.json`), "utf8"));
   } catch {
     return {};
   }
@@ -27,11 +27,21 @@ function readViMap(n) {
 
 const viMaps = {
   1: vi1,
-  2: readViMap(2),
-  3: readViMap(3),
-  4: readViMap(4),
-  5: readViMap(5),
-  6: readViMap(6),
+  2: readMap("vi", 2),
+  3: readMap("vi", 3),
+  4: readMap("vi", 4),
+  5: readMap("vi", 5),
+  6: readMap("vi", 6),
+};
+
+// Câu ví dụ: scripts/ex-hskN.json, dạng { "chữ": { h, p, vi } } — bổ sung dần theo từng cấp
+const exMaps = {
+  1: readMap("ex", 1),
+  2: readMap("ex", 2),
+  3: readMap("ex", 3),
+  4: readMap("ex", 4),
+  5: readMap("ex", 5),
+  6: readMap("ex", 6),
 };
 
 for (let n = 1; n <= 6; n++) {
@@ -47,9 +57,12 @@ for (let n = 1; n <= 6; n++) {
     const w = { h: simp.trim(), p: (pinyin ?? "").trim(), en: (en ?? "").trim() };
     const vi = viMaps[n][w.h];
     if (vi) w.vi = vi;
+    const ex = exMaps[n][w.h];
+    if (ex) w.ex = ex;
     words.push(w);
   }
   writeFileSync(join(OUT, `level${n}.json`), JSON.stringify(words));
   const translated = words.filter((w) => w.vi).length;
-  console.log(`HSK${n}: ${words.length} từ (${translated} có nghĩa Việt)`);
+  const withEx = words.filter((w) => w.ex).length;
+  console.log(`HSK${n}: ${words.length} từ (${translated} có nghĩa Việt, ${withEx} có câu ví dụ)`);
 }

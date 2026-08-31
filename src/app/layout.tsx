@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Be_Vietnam_Pro, Noto_Sans_SC } from "next/font/google";
 import Link from "next/link";
+import { RegisterSW } from "@/components/RegisterSW";
 import "./globals.css";
 
 const beVietnam = Be_Vietnam_Pro({
@@ -18,6 +19,18 @@ const notoSC = Noto_Sans_SC({
 export const metadata: Metadata = {
   title: "Học Tiếng Hoa",
   description: "Ứng dụng tự học tiếng Trung: flashcard HSK, luyện viết chữ Hán, trắc nghiệm và kho tài liệu",
+  manifest: "/manifest.webmanifest",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Học Tiếng Hoa",
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#dc2626",
+  width: "device-width",
+  initialScale: 1,
 };
 
 const NAV = [
@@ -26,6 +39,7 @@ const NAV = [
   { href: "/flashcards", label: "Flashcard" },
   { href: "/viet", label: "Luyện viết" },
   { href: "/quiz", label: "Trắc nghiệm" },
+  { href: "/onsai", label: "Từ sai" },
   { href: "/tailieu", label: "Tài liệu" },
   { href: "/taikhoan", label: "Tài khoản" },
 ];
@@ -37,6 +51,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${beVietnam.variable} ${notoSC.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-stone-50 text-stone-900 dark:bg-stone-950 dark:text-stone-100">
+        <RegisterSW />
         <header className="sticky top-0 z-10 border-b border-stone-200 dark:border-stone-800 bg-white/90 dark:bg-stone-900/90 backdrop-blur">
           <div className="mx-auto max-w-5xl px-4 py-3 flex items-center gap-6 overflow-x-auto">
             <Link href="/" className="flex items-center gap-2 shrink-0">

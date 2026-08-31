@@ -1,8 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { LEVELS, meaning, wordKey, type Word } from "@/data/hsk";
+import { LEVELS, wordKey, type Word } from "@/data/hsk";
 import { LevelPicker, useLevel } from "@/components/LevelPicker";
+import { FlipCard } from "@/components/FlipCard";
 import {
   isDue,
   loadProgress,
@@ -11,7 +12,8 @@ import {
   type Progress,
 } from "@/lib/srs";
 import { pushOne } from "@/lib/sync";
-import { initTTS, speak } from "@/lib/tts";
+import { initTTS } from "@/lib/tts";
+import { recordCorrect, recordMistake } from "@/lib/mistakes";
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -59,6 +61,8 @@ export default function Flashcards() {
     setProgress(p);
     saveProgress(p);
     pushOne(key, p[key].box, p[key].due); // đồng bộ nếu đã đăng nhập
+    if (known) recordCorrect(key);
+    else recordMistake(key); // gom vào sổ từ sai để ôn tập trung sau này
     setDone((d) => ({
       known: d.known + (known ? 1 : 0),
       unknown: d.unknown + (known ? 0 : 1),
@@ -116,49 +120,13 @@ export default function Flashcards() {
             Thẻ {idx + 1}/{queue.length}
           </div>
 
-          <div
-            className={`flip-card cursor-pointer select-none ${flipped ? "flipped" : ""}`}
-            onClick={() => setFlipped((f) => !f)}
-          >
-            <div className="flip-inner relative h-80">
-              <div className="flip-face absolute inset-0 rounded-3xl border border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900 flex flex-col items-center justify-center gap-4 shadow-sm px-6">
-                <span
-                  className={`font-hanzi text-center ${current.h.length > 3 ? "text-6xl" : "text-8xl"}`}
-                >
-                  {current.h}
-                </span>
-                <span className="text-xs text-stone-400">Chạm để xem nghĩa</span>
-              </div>
-              <div className="flip-back flip-face absolute inset-0 rounded-3xl bg-red-600 text-white flex flex-col items-center justify-center gap-3 px-6 text-center shadow-sm">
-                <span className="font-hanzi text-5xl">{current.h}</span>
-                <span className="text-2xl font-medium">{current.p}</span>
-                <span className="text-lg opacity-90">{meaning(current)}</span>
-                {!current.vi && (
-                  <span className="text-xs opacity-70">(nghĩa tiếng Anh — sẽ Việt hóa dần)</span>
-                )}
-              </div>
-            </div>
-          </div>
-
-          <div className="flex justify-center">
-            <button
-              onClick={(e) => {
-                e.stopPropagation();
-                speak(current.h, () => setTtsWarning(true));
-              }}
-              className="px-5 py-2 rounded-full border border-stone-300 dark:border-stone-700 text-sm hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors"
-            >
-              🔊 Nghe phát âm
-            </button>
-          </div>
-
-          {ttsWarning && (
-            <p className="text-center text-xs text-amber-600 -mt-3">
-              ⚠️ Máy chưa phát được âm thanh. Nếu bạn đang mở link trong Zalo/Messenger/Facebook,
-              hãy chạm góc phải trên và chọn &quot;Mở bằng Safari/Chrome&quot;. Nếu vẫn không nghe
-              được, vào Cài đặt máy → Ngôn ngữ &amp; giọng đọc để tải giọng tiếng Trung.
-            </p>
-          )}
+          <FlipCard
+            word={current}
+            flipped={flipped}
+            onToggleFlip={() => setFlipped((f) => !f)}
+            ttsWarning={ttsWarning}
+            onTtsFail={() => setTtsWarning(true)}
+          />
 
           <div className="grid grid-cols-2 gap-3">
             <button

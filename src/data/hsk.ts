@@ -6,11 +6,18 @@ import level4 from "./hsk/level4.json";
 import level5 from "./hsk/level5.json";
 import level6 from "./hsk/level6.json";
 
+export type Example = {
+  h: string; // câu ví dụ bằng chữ Hán
+  p: string; // pinyin của câu
+  vi: string; // dịch nghĩa câu
+};
+
 export type Word = {
   h: string; // chữ Hán giản thể
   p: string; // pinyin
   en: string; // nghĩa tiếng Anh
   vi?: string; // nghĩa tiếng Việt (đã đầy đủ cho HSK1-6)
+  ex?: Example; // câu ví dụ (đang bổ sung dần theo từng cấp)
 };
 
 export const LEVELS: Record<number, Word[]> = {
