@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import type HanziWriterType from "hanzi-writer";
 import { LEVELS, meaning, type Word } from "@/data/hsk";
 import { LevelPicker, useLevel } from "@/components/LevelPicker";
-import { speak } from "@/lib/tts";
+import { initTTS, speak } from "@/lib/tts";
 
 export default function LuyenViet() {
   const [level, setLevel] = useLevel();
@@ -14,6 +14,11 @@ export default function LuyenViet() {
   const [status, setStatus] = useState<"idle" | "quiz" | "done">("idle");
   const boxRef = useRef<HTMLDivElement>(null);
   const writerRef = useRef<HanziWriterType | null>(null);
+
+  // nạp giọng đọc sớm + mở khóa phát âm trên mobile
+  useEffect(() => {
+    initTTS();
+  }, []);
 
   // đổi cấp độ thì chọn từ đầu tiên của cấp đó
   useEffect(() => {

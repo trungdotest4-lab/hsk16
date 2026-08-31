@@ -7,6 +7,12 @@ import { loadProgress, stats } from "@/lib/srs";
 
 const FEATURES = [
   {
+    href: "/lotrinh",
+    hanzi: "路",
+    title: "Tổng quan & Lộ trình",
+    desc: "Xem tổng số từ đã học, từ đến hạn ôn, và lộ trình hướng dẫn từ HSK1 đến HSK6.",
+  },
+  {
     href: "/flashcards",
     hanzi: "卡",
     title: "Flashcard từ vựng",

@@ -11,7 +11,7 @@ import {
   type Progress,
 } from "@/lib/srs";
 import { pushOne } from "@/lib/sync";
-import { speak } from "@/lib/tts";
+import { initTTS, speak } from "@/lib/tts";
 
 function shuffle<T>(arr: T[]): T[] {
   const a = [...arr];
@@ -35,6 +35,7 @@ export default function Flashcards() {
   const [answering, setAnswering] = useState(false); // chặn bấm đúp trong lúc chờ úp thẻ
 
   useEffect(() => {
+    initTTS(); // nạp giọng đọc sớm + mở khóa phát âm trên mobile
     const p = loadProgress();
     setProgress(p);
     const words = LEVELS[level];

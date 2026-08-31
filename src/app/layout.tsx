@@ -22,6 +22,7 @@ export const metadata: Metadata = {
 
 const NAV = [
   { href: "/", label: "Trang chủ" },
+  { href: "/lotrinh", label: "Lộ trình" },
   { href: "/flashcards", label: "Flashcard" },
   { href: "/viet", label: "Luyện viết" },
   { href: "/quiz", label: "Trắc nghiệm" },

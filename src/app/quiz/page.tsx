@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { LEVELS, meaning, type Word } from "@/data/hsk";
 import { LevelPicker, useLevel } from "@/components/LevelPicker";
-import { speak } from "@/lib/tts";
+import { initTTS, speak } from "@/lib/tts";
 
 type Mode = "nghia" | "chu" | "nghe";
 type Question = { word: Word; choices: Word[] };
@@ -52,6 +52,11 @@ export default function Quiz() {
   }
 
   const q = questions[idx];
+
+  // Nạp giọng đọc sớm + mở khóa phát âm trên mobile
+  useEffect(() => {
+    initTTS();
+  }, []);
 
   // Tự phát âm khi sang câu mới ở chế độ nghe (kể cả khi "Làm lại" với bộ câu hỏi mới)
   useEffect(() => {

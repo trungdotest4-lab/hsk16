@@ -31,6 +31,12 @@ export default function TaiKhoan() {
     return () => sub.subscription.unsubscribe();
   }, [sb]);
 
+  // Cho phép nhập tên đăng nhập ngắn (vd "hoainam") — tự thêm hậu tố email nội bộ
+  function toEmail(input: string): string {
+    const v = input.trim().toLowerCase();
+    return v.includes("@") ? v : `${v}@hsk16.local`;
+  }
+
   async function submit(e: React.FormEvent) {
     e.preventDefault();
     if (!sb) return;
@@ -38,14 +44,14 @@ export default function TaiKhoan() {
     setMsg(null);
     try {
       if (mode === "signup") {
-        const { error } = await sb.auth.signUp({ email, password });
+        const { error } = await sb.auth.signUp({ email: toEmail(email), password });
         if (error) throw error;
         setMsg({
           kind: "ok",
           text: "Đã đăng ký! Nếu Supabase yêu cầu xác nhận email, hãy kiểm tra hộp thư rồi quay lại đăng nhập.",
         });
       } else {
-        const { error } = await sb.auth.signInWithPassword({ email, password });
+        const { error } = await sb.auth.signInWithPassword({ email: toEmail(email), password });
         if (error) throw error;
         await doSync();
         setMsg({ kind: "ok", text: "Đăng nhập thành công, tiến độ đã được đồng bộ!" });
@@ -121,7 +127,7 @@ export default function TaiKhoan() {
       {user ? (
         <div className="rounded-2xl border border-stone-200 dark:border-stone-800 bg-white dark:bg-stone-900 p-6 space-y-4">
           <p>
-            Đang đăng nhập: <b>{user.email}</b>
+            Đang đăng nhập: <b>{user.email?.replace(/@hsk16\.local$/, "")}</b>
           </p>
           <p className="text-sm text-stone-500">
             Tiến độ trên máy này: {localCount} từ đã có dữ liệu ôn tập.
@@ -164,11 +170,13 @@ export default function TaiKhoan() {
             ))}
           </div>
           <input
-            type="email"
+            type="text"
             required
+            autoCapitalize="none"
+            autoCorrect="off"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="Email"
+            placeholder="Tên đăng nhập (vd: hoainam) hoặc email"
             className="w-full rounded-xl border border-stone-300 dark:border-stone-700 bg-transparent px-4 py-2.5 outline-none focus:border-red-400"
           />
           <input
