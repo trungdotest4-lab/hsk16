@@ -32,6 +32,7 @@ export default function Flashcards() {
   const [flipped, setFlipped] = useState(false);
   const [done, setDone] = useState({ known: 0, unknown: 0 });
   const [ready, setReady] = useState(false);
+  const [answering, setAnswering] = useState(false); // chặn bấm đúp trong lúc chờ úp thẻ
 
   useEffect(() => {
     const p = loadProgress();
@@ -49,7 +50,8 @@ export default function Flashcards() {
   const finished = ready && (queue.length === 0 || idx >= queue.length);
 
   function answer(known: boolean) {
-    if (!current) return;
+    if (!current || answering) return;
+    setAnswering(true);
     const key = wordKey(level, current);
     const p = review(progress, key, known);
     setProgress(p);
@@ -61,7 +63,10 @@ export default function Flashcards() {
     }));
     setFlipped(false);
     // đợi thẻ úp lại rồi mới chuyển từ để tránh lộ mặt sau
-    setTimeout(() => setIdx((i) => i + 1), 250);
+    setTimeout(() => {
+      setIdx((i) => i + 1);
+      setAnswering(false);
+    }, 250);
   }
 
   function restart() {

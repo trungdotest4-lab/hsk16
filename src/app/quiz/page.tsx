@@ -53,11 +53,11 @@ export default function Quiz() {
 
   const q = questions[idx];
 
-  // Tự phát âm khi sang câu mới ở chế độ nghe
+  // Tự phát âm khi sang câu mới ở chế độ nghe (kể cả khi "Làm lại" với bộ câu hỏi mới)
   useEffect(() => {
     if (mode === "nghe" && q && picked === null) speak(q.word.h);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [mode, idx]);
+  }, [mode, idx, questions]);
 
   function pick(w: Word) {
     if (picked !== null) return;

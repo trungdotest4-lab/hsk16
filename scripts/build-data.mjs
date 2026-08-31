@@ -16,13 +16,22 @@ for (const m of hsk1ts.matchAll(/h:\s*"([^"]+)",\s*p:\s*"[^"]*",\s*vi:\s*"([^"]+
   vi1[m[1]] = m[2];
 }
 
+// Đọc file nghĩa Việt nếu có, chưa có thì trả về map rỗng
+function readViMap(n) {
+  try {
+    return JSON.parse(readFileSync(join(ROOT, `scripts/vi-hsk${n}.json`), "utf8"));
+  } catch {
+    return {};
+  }
+}
+
 const viMaps = {
   1: vi1,
-  2: JSON.parse(readFileSync(join(ROOT, "scripts/vi-hsk2.json"), "utf8")),
-  3: JSON.parse(readFileSync(join(ROOT, "scripts/vi-hsk3.json"), "utf8")),
-  4: {},
-  5: {},
-  6: {},
+  2: readViMap(2),
+  3: readViMap(3),
+  4: readViMap(4),
+  5: readViMap(5),
+  6: readViMap(6),
 };
 
 for (let n = 1; n <= 6; n++) {

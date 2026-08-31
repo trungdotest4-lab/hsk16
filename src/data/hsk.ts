@@ -10,7 +10,7 @@ export type Word = {
   h: string; // chữ Hán giản thể
   p: string; // pinyin
   en: string; // nghĩa tiếng Anh
-  vi?: string; // nghĩa tiếng Việt (HSK1-3 đầy đủ, HSK4-6 bổ sung dần)
+  vi?: string; // nghĩa tiếng Việt (đã đầy đủ cho HSK1-6)
 };
 
 export const LEVELS: Record<number, Word[]> = {
